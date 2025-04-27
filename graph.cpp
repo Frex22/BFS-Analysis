@@ -68,3 +68,21 @@ Graph Graph::loadFromFile(const std::string& filename, bool directed) {
     }
     return graph;
 }
+
+void Graph::printStats() const {
+    std::cout << "Graph Statistics:" << std::endl;
+    std::cout << "  Vertices: " << num_vertices << std::endl;
+    std::cout << "  Edges: " << num_edges << std::endl;
+    
+    // Calculate average degree
+    double avg_degree = static_cast<double>(num_edges) / num_vertices;
+    std::cout << "  Average degree: " << avg_degree << std::endl;
+    
+    // Find max degree
+    int max_degree = 0;
+    for (int i = 0; i < num_vertices; i++) {
+        int degree = row_offsets[i + 1] - row_offsets[i];
+        max_degree = std::max(max_degree, degree);
+    }
+    std::cout << "  Maximum degree: " << max_degree << std::endl;
+}
