@@ -1,0 +1,9 @@
+
+==== Performance Summary ====
+Graph: web-Google
+Vertices: 916428
+Edges: 5105039
+Sequential time: 31.69 ms
+Best parallel time: 0.10 ms
+Max speedup: 956.95xx
+Best thread count: 2

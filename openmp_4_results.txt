@@ -1,0 +1,2 @@
+Speedup over sequential: 0.34x
+Average OpenMP BFS time: 0.09 ms

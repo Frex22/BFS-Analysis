@@ -1,0 +1,7 @@
+  Average degree: 21.8455
+BFS Performance (Sequential):
+Average Sequential BFS time: 0.03 ms
+BFS Performance (OpenMP):
+Speedup over sequential: 3.44x
+Average OpenMP BFS time: 0.02 ms
+Average speedup: 2.24x

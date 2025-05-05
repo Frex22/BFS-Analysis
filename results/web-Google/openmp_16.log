@@ -1,0 +1,33 @@
+Loading graph from file: data/web-Google.txt
+Graph Statistics:
+  Vertices: 916428
+  Edges: 5105039
+  Average degree: 5.57058
+  Maximum degree: 456
+
+Running Sequential BFS...
+BFS Performance (Sequential):
+  Source vertex: 0
+  Execution time: 72.2825 ms
+  Vertices visited: 5/916428 (0.00%)
+  Maximum distance: 1
+  Edges traversed: 5105039
+  MTEPS: 70.63
+Run 2: 0.08 ms
+Run 3: 0.08 ms
+Average Sequential BFS time: 24.15 ms
+
+Running OpenMP BFS with 16 threads...
+OpenMP results verified correct.
+BFS Performance (OpenMP):
+  Source vertex: 0
+  Execution time: 16.24 ms
+  Vertices visited: 5/916428 (0.00%)
+  Maximum distance: 1
+  Edges traversed: 5105039
+  MTEPS: 314.37
+Speedup over sequential: 4.46x
+Run 2: 0.68 ms
+Run 3: 0.15 ms
+Average OpenMP BFS time: 5.69 ms
+Average speedup: 4.24x
